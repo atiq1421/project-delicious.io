@@ -24,7 +24,7 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
+ 
   <link href="assets/css/style.css" rel="stylesheet">
 
   <!-- =======================================================
@@ -537,7 +537,7 @@
           <div class="row">
             <input type="hidden" name="access_key" value="9b0c9d15-e866-4077-8f81-47336c5e5ced">
             <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" pattern="[A-Za-z]" data-rule="minlen:4" data-msg="Please enter at least 4 chars">
               <div class="validate"></div>
             </div>
             <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
@@ -860,7 +860,7 @@
         <form action="forms/contact.php" method="post" role="form" class="php-email-form">
           <div class="row">
             <div class="col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" pattern="[A-Za-z]" required>
             </div>
             <div class="col-md-6 form-group mt-3 mt-md-0">
               <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
